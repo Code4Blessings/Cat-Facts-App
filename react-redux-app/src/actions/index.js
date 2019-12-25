@@ -1,3 +1,1 @@
-const getText = () => {
-    
-}
+export { LOAD_TEXT_START, getText } from './textActions'
