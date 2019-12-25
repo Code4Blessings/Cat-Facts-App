@@ -1,11 +1,14 @@
-export const initialState = {
-
+const initialState = {
+    text: null,
+    isLoading: false,
+    error: ''
 }
 
-export const reduxReducer = (state = initialState, action) => {
+const reduxReducer = (state = initialState, action) => {
     switch(action.type) {
         default:
         return state;
     }
 };
 
+export default reduxReducer;
