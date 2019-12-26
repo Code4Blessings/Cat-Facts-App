@@ -6,7 +6,7 @@ export const LOAD_TEXT_START = "LOAD_TEXT_START"
 export const getText = () => dispatch => {
         dispatch({ type: LOAD_TEXT_START });
         axios
-            .get('https://cat-fact.herokuapp.com/facts')
+            .get('https://catfact.ninja/facts?limit=1&max_length=140')
             .then(res => {
                 console.log(res);
             })
