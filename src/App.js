@@ -1,12 +1,12 @@
 import React from 'react';
-import Text from './components/Text';
+import Fact from './components/Fact';
 import './App.css';
 
 
 function App() {
   return (
     <div className="App">
-      <Text />
+      <Fact />
     </div>
   );
 }

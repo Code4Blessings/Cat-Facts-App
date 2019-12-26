@@ -1,1 +1,1 @@
-export { LOAD_TEXT_START, getText } from './textActions'
+export { LOAD_FACT_START, getFact } from './textActions'

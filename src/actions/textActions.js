@@ -1,10 +1,10 @@
 import axios from 'axios';
 
-export const LOAD_TEXT_START = "LOAD_TEXT_START"
+export const LOAD_FACT_START = "LOAD_FACT_START"
 
 //async action creator
-export const getText = () => dispatch => {
-        dispatch({ type: LOAD_TEXT_START });
+export const getFact = () => dispatch => {
+        dispatch({ type: LOAD_FACT_START });
         axios
             .get('https://catfact.ninja/facts?limit=1&max_length=140')
             .then(res => {

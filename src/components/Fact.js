@@ -1,9 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Loader from 'react-loader-spinner';
-import { getText } from '../actions';
+import { getFact } from '../actions';
 
-const Text = props => {
+const Fact = props => {
     return (
         <div>
             <h1>Some Wonderful Facts About Cats!!!</h1>
@@ -17,14 +17,14 @@ const Text = props => {
                 />
 
             )} 
-            <button onClick={props.getText} >Cat Fact</button>
+            <button onClick={props.getFact} >Cat Fact</button>
         </div>
     );
 };
 
 const mapStateToProps = state => {
   return {
-    text: state.text,
+    fact: state.text,
     isLoading: state.isLoading,
     error: state.error
   }
@@ -32,5 +32,5 @@ const mapStateToProps = state => {
 
 export default connect(
     mapStateToProps, 
-    { getText }
-)(Text);
+    { getFact }
+)(Fact);

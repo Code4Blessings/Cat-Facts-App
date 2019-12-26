@@ -1,14 +1,14 @@
-import { LOAD_TEXT_START } from '../actions';
+import { LOAD_FACT_START } from '../actions';
 
 const initialState = {
-    text: null,
+    fact: null,
     isLoading: false,
     error: ''
 }
 
 const reduxReducer = (state = initialState, action) => {
     switch(action.type) {
-        case LOAD_TEXT_START:
+        case LOAD_FACT_START:
         return {
             ...state,
             isLoading: true
