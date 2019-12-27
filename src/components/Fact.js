@@ -9,14 +9,9 @@ const Fact = props => {
             <h1>Some Wonderful Facts About Cats!!!</h1>
             {!props.text && !props.isLoading && <p>Go ahead! Get a cat fact <span role="img" aria-label="cat">😺</span></p>}
             {props.isLoading && (
-                 <Loader
-                    type="Puff"
-                    color="#00BFFF"
-                    height={100}
-                    width={100}
-                />
-
+                 <Loader type="Puff" color="#00BFFF" height={100} width={100}/>
             )} 
+            {props.fact && <p>{props.fact.fact}</p>}
             <button onClick={props.getFact} >Cat Fact</button>
         </div>
     );
@@ -24,7 +19,7 @@ const Fact = props => {
 
 const mapStateToProps = state => {
   return {
-    fact: state.text,
+    fact: state.fact,
     isLoading: state.isLoading,
     error: state.error
   }
