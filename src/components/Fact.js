@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import Loader from 'react-loader-spinner';
 import { getFact } from '../actions';
 
+//It is not necessary to add mapStateTpProps to App.js unless that is where it houses all the UI that is listed below where props are being passed.
+
 const Fact = props => {
     return (
         <div>
