@@ -7,7 +7,7 @@ import { getFact } from '../actions';
 
 const Fact = props => {
     return (
-        <div>
+        <div className="cat-container">
             <h1>Some Wonderful Facts About Cats!!!</h1>
             {!props.text && !props.isLoading && <p>Go ahead! Get a cat fact <span role="img" aria-label="cat">😺</span></p>}
             {props.isLoading && (
